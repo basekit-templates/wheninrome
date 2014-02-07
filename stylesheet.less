@@ -12,6 +12,7 @@ body {
 	background-color:@color-swatch1;
 	border-top:10px solid @color-swatch2;
 	border-bottom:10px solid @color-swatch2;
+	margin: 0;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
@@ -22,6 +23,11 @@ body {
 /* ===============================
    0. STRUCTURE
    =============================== */
+
+.wrapper {
+   width: 80%;
+   margin: 0 10%;
+}
 
 .container {
 	padding: 40px;
@@ -58,6 +64,7 @@ body {
 
 .widget.logo {
 	margin-top:60px;
+	text-align:center;
 }
 
 .footer {
@@ -166,6 +173,7 @@ button, button span, .widget.tweet a, input[type="submit"] {
 
 .social {
 	margin-top: 30px;
+	text-align:center;
 }
 
 /* ===============================
@@ -327,7 +335,9 @@ ul, ol, li {
    =============================== */
 
 .widget.companyname {
-	padding:40px 0px;
+	text-align:center;
+	padding:20px 0px 0px 0px;
+	text-decoration: none;
 		a {
 			color:@font-swatch1-color;
 		  }
@@ -341,6 +351,10 @@ ul, ol, li {
 .blog-post-item.no-image {
 	margin-bottom:40px;
 	background-color:lighten(@color-swatch2,97%);
+}
+
+.widget.content .bk-content-text {
+	text-align:center;
 }
 
 /* ===============================
