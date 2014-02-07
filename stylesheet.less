@@ -5,19 +5,13 @@
 @import "@{templateLocal}/flynn/grid.less";
 //@import "flynn/type.less";
 
-@color-swatch1: #647172; // Background colour
-@color-swatch2: #3b8288; // Accent colour
-@color-swatch3: #336366; // Dark accent colour
-@color-swatch4: #c2c8c6; // Light accent colour
-@color-swatch5: #666666; // Copy colour
-@color-swatch6: #ffffff; // Block background colour
-@color-swatch7: #596565; // Block shadow colour
-
 body {
-	font-family: @font-swatch4-font-family;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	font-size: 12px;
+	background-color:@color-swatch1;
+	border-top:10px solid @color-swatch2;
+	border-bottom:10px solid @color-swatch2;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
@@ -29,25 +23,43 @@ body {
    0. STRUCTURE
    =============================== */
 
-.header, .bloglist-page .blog-post-item, .blogpost-page, .default-page, .menu-page, .home-page, .gallery-featured, .contact-page, .about-page {
-	padding: 20px;
-	margin-top: 30px;
-	background: @color-swatch6;
-	box-shadow: 10px 10px 0 @color-swatch7;
-	float: left;
+.container {
+	padding: 40px;
 }
+
+.header, .bloglist-page .blog-post-item, .blogpost-page, .default-page, .menu-page, .home-page, .gallery-featured, .contact-page, .about-page {
+	background: @color-swatch1;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.section.span-8 {
+	width: 100%;
+}
+
+.article.home-page {
+	padding: 0px;
+	width: 100%;
+}
+
 .bloglist-page .blog-post-item, .blogpost-page, .default-page, .menu-page, .home-page, .gallery-featured, .contact-page, .about-page {
 	width: 100%;
 }
 .header {
 	.logo-title {
-		text-align: center;
 		img {
 			//border: 2px solid @color-swatch2;
 			margin-top: -40px;
 		}
 	}
 }
+
+.widget.logo {
+	margin-top:60px;
+}
+
 .footer {
 	clear: both;
 	text-align: center;
@@ -113,14 +125,10 @@ body {
 	}
 }
 .blog-post-feature-image-wrap {
-	position: absolute;
-	top: -20px;
-	right: -20px;
-	bottom: -20px;
-	width: 40%;
+	width: 100%;
 	background-size: cover;
 	img {
-		display: none;
+
 	}
 }
 .blogpost-page, .bloglist-page .blog-post-item {
@@ -153,121 +161,102 @@ button, button span, .widget.tweet a, input[type="submit"] {
 
 
 /* ===============================
-   2. NAVIGATION
+   2. SOCIAL
    =============================== */
 
-
-.nav {
-	margin-bottom: 1em;
-	li, .widget .extendednavigation ul.align-left li {
-		border-bottom: 1px solid @color-swatch4;
-		margin-left: 0;
-		float: none;
-		width: 100%;
-		background: none;
-	}
-	a:hover, .nav .widget .extendednavigation ul li .text:hover {
-		text-decoration: none;
-		color: @color-swatch2;
-	}
-	a, .widget .extendednavigation ul li .text {
-		font-family: @font-swatch1-font-family;
-		font-size: 1.2em;
-		font-weight: 400;
-		line-height: 2em;
-		color: @color-swatch2;
-		&:hover {
-			color: @color-swatch1;
-		}
-	}
-	ul, .widget .extendednavigation ul {
-		list-style: none;
-		float: none;
-		overflow: hidden;
-	}
+.social {
+	margin-top: 30px;
+}
 
 /* ===============================
-   3. DROPDOWN
+   3. NAV
    =============================== */
 
-	li ul, .widget .extendednavigation ul.align-left li ul {
-		position: relative;
-		display: block;
-		height: 0;
-		-webkit-transition: .2s;
-		transition: .2s;
-		-moz-transition: .2s;
-		li {
-			padding-left: 1em;
-			border-bottom: none;
-			border-top: 1px solid @color-swatch4;
-			background: fadeout(@color-swatch4, 85%);
-		}
-	}
-	.widget .extendednavigation ul.align-left li:hover ul {
-		min-height: 60px;
-		height: auto;
-		background-color: fadeout(@color-swatch4, 85%);
-	}
+nav {
+	border-top: 1px solid lighten(@color-swatch2,95%);
+	border-bottom: 1px solid lighten(@color-swatch2,95%);
+	padding: 10px 0px 0px 0px;
+	margin-top: 40px;
 }
-.social {
-	padding-top: 1em;
-	a {
-		padding: .2em;
-		display: inline-block;
-	}
-}
-.widget.gallery ul {
-	margin-top: 20px;
-	margin-left: -20px;
-	li {
-		margin-left: 20px;
-	}
-}
-.widget.content {
-	padding-bottom: 20px;
+
+.widget .extendednavigation {
+	position: relative;
+	max-width: 700px;
+	min-height: 40px;
+	text-align: center;
+	margin: 0px auto;
+	display: table;
 }
 
 /* ===============================
    4. TYPE
    =============================== */
 
-h1, .widget.companyname a {
-	color: @color-swatch2;
-	font-weight: 400;
-	font-size: 42px;
+h1 {
+  font-family:@font-swatch1-font-family;
+  font-weight: @font-swatch1-font-weight;
+  color:@font-swatch1-color;
+  line-height:@font-swatch1-line-height;
+  letter-spacing: @font-swatch1-letter-spacing;
+  font-size: @font-swatch1-font-size;
 }
-h2, h2 a {
-	font-family: @font-swatch1-font-family;
+
+h2
+{
+  font-family:@font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height:@font-swatch2-line-height;
+  color: @font-swatch2-color;
+  letter-spacing: @font-swatch2-letter-spacing;
 }
-h2 {
-	font-size: 3em;
-	font-weight: 400;
-	line-height: 1.4em;
-	a {
-		font-size: inherit;
-		font-weight: 400;
-	}
+
+h3
+{
+  font-family:@font-swatch3-font-family;
+  font-size:@font-swatch3-font-size;
+  font-weight: @font-swatch3-font-weight;
+  color: @font-swatch3-color;
+  line-height:@font-swatch3-line-height;
+  letter-spacing: @font-swatch3-letter-spacing;
 }
-h3 {
-	font-family: @font-swatch4-font-family;
-	color: @color-swatch3;
-	font-size: 1.2em;
-	font-weight: 400;
-	padding-bottom: .1em;
+
+h4
+{
+  font-family:@font-swatch4-font-family;
+  font-size:@font-swatch4-font-size;
+  font-weight:@font-swatch4-font-weight;
+  line-height:@font-swatch4-line-height;
+  color:@font-swatch4-color;
+  letter-spacing: @font-swatch4-letter-spacing;
 }
-p, small {
-	font-size: 1em;
-	font-weight: 300;
-	text-shadow: 0 1px 1px fadeout(@color-swatch4, 50%);
+
+p
+{
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
 }
-p {
-	font-size: 1.3em;
+
+ul, ol, li {
+  font-family:@font-swatch6-font-family;
+  font-size:@font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  line-height:@font-swatch6-line-height;
+  color:@font-swatch6-color;
+  letter-spacing: @font-swatch6-letter-spacing;
 }
-small {
-	font-size: .8em;
-	color: @color-swatch4;
-	text-shadow: none;
+
+.blog-post-title a {
+  font-family:@font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height:@font-swatch2-line-height;
+  color: @font-swatch2-color;
+  letter-spacing: @font-swatch2-letter-spacing;
 }
 
 /* ===============================
@@ -276,9 +265,6 @@ small {
 
 .widget.responsiveslideshow .content-wrapper {
 	background-color: @color-swatch6;
-}
-.widget {
-	padding-bottom: 20px;
 }
 .widget.menu .main {
 	position: relative;
@@ -337,7 +323,36 @@ small {
 }
 
 /* ===============================
-   6. RESPONSIVE
+   6. CUSTOM CSS
+   =============================== */
+
+.widget.companyname {
+	padding:40px 0px;
+		a {
+			color:@font-swatch1-color;
+		  }
+}
+
+.widget.profile .bk-profile-socialicons span a {
+	border-radius: 20px;
+	background-color: @color-swatch2;
+}
+
+.blog-post-item.no-image {
+	margin-bottom:40px;
+	background-color:lighten(@color-swatch2,97%);
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+   .footer {
+   		border-top: 1px solid lighten(@color-swatch2,95%);
+   }
+
+/* ===============================
+   7. RESPONSIVE
    =============================== */
 
 @media (max-width: 767px) {
@@ -359,11 +374,17 @@ small {
 		}
 	}
 	.widget .extendednavigation ul {
-		display: block;
+		display: none;
 		li {
 			padding: 0;
+			border-bottom:0px;
+			margin-left:0px;
 			&:hover ul {
 				margin: 0;
+			}
+			.text {
+				margin:0px auto;
+				display:table;
 			}
 		}
 	}
@@ -387,6 +408,30 @@ small {
 	.blog-post-item.has-image .blog-post-publish-date {
 		text-shadow: none;
 		color: @color-swatch4;
+	}
+
+	/* ===============================
+   8. NAV
+   =============================== */
+
+	.widget .extendednavigation ul.align-left li {
+		text-align:center;
+	}
+
+	ul.align-left li, button.justifyleft, .widget-align-left {
+		text-align:center;
+	}
+
+	.widget .extendednavigation a.pull {
+		width: 20px;
+		height: 40px;
+		position: absolute;
+		right: 0;
+		margin: 0px auto;
+		display: table;
+		top: -8px;
+		bottom: 0;
+		left:0;
 	}
 }
 
