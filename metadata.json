@@ -2,10 +2,16 @@
     "name":"wheninrome",
     "thumbnail":"wheninrome.png",
     "screenshot":"wheninrome.png",
+        "pageTypes": [
+        "home",
+        "default",
+        "bloglistposts",
+        "blogpost"
+    ],
     "tags": {
-    "en": ["blog"],
-    "es": ["blog"],
-    "br": ["blog"]
+    "en": ["clean", "nature", "white", "modern", "blog", "professional", "simple", "arctic", "winter", "snow", "sans serif"],
+    "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
+    "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estúdio", "website", "criativo", "elegante", "profissional", "único", "mídia", "sans-serif"]
     },
     "colorSwatches":
     {
@@ -19,40 +25,40 @@
             "color7":"#596565"
         },
         "Swatch 2": {
-            "color1":"#AC7A78",
-            "color2":"#ffd4d2",
-            "color3":"#3e3e3e",
-            "color4":"#6a6a6a",
-            "color5":"#bdbdbd",
-            "color6":"#ffffff",
-            "color7":"#f4f4f4"
+            "color1":"#ffffff",
+            "color2":"#000000",
+            "color3":"#336366",
+            "color4":"#000000",
+            "color5":"#8c8c8c",
+            "color6":"#70b5d8",
+            "color7":"#596565"
         },
         "Swatch 3": {
-            "color1":"#A7C3E9",
-            "color2":"#e7f4ff",
-            "color3":"#3e3e3e",
-            "color4":"#6a6a6a",
-            "color5":"#bdbdbd",
-            "color6":"#ffffff",
-            "color7":"#f4f4f4"
+            "color1":"#ffffff",
+            "color2":"#000000",
+            "color3":"#336366",
+            "color4":"#000000",
+            "color5":"#8c8c8c",
+            "color6":"#70b5d8",
+            "color7":"#596565"
         },
         "Swatch 4": {
-            "color1":"#934FD3",
-            "color2":"#f7d6ff",
-            "color3":"#3e3e3e",
-            "color4":"#6a6a6a",
-            "color5":"#bdbdbd",
-            "color6":"#ffffff",
-            "color7":"#f4f4f4"
+            "color1":"#ffffff",
+            "color2":"#000000",
+            "color3":"#336366",
+            "color4":"#000000",
+            "color5":"#8c8c8c",
+            "color6":"#70b5d8",
+            "color7":"#596565"
         },
         "Swatch 5": {
-            "color1":"#A71A18",
-            "color2":"#ffc59f",
-            "color3":"#3e3e3e",
-            "color4":"#6a6a6a",
-            "color5":"#bdbdbd",
-            "color6":"#ffffff",
-            "color7":"#f4f4f4"
+            "color1":"#ffffff",
+            "color2":"#000000",
+            "color3":"#336366",
+            "color4":"#000000",
+            "color5":"#8c8c8c",
+            "color6":"#70b5d8",
+            "color7":"#596565"
         }
     },
     "fontSwatch": {
@@ -110,13 +116,13 @@
         },
         "font7": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "18px",
+            "font-size": "14px",
             "font-weight": "300",
             "line-height": "28px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
-            "background-color": "@color-swatch3",
-            "background-color-hover": "darken(@color-swatch3,5%)"
+            "background-color": "@color-swatch2",
+            "background-color-hover": "lighten(@color-swatch2,15%)"
         },
         "font8": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
@@ -136,9 +142,9 @@
         },
         "font10": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "56px",
-            "font-weight": "600",
-            "line-height": "60px",
+            "font-size": "34px",
+            "font-weight": "700",
+            "line-height": "42px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         }

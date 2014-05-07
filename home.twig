@@ -5,31 +5,27 @@
 
 <header>
     <div class="wrapper clearfix">
-                <div class="logo-title">
-                    {{widget('logo', 'logo', {"defaultlogo": asset('images/star.png')})|raw}}
-                    <h1>{{widget('companyname', 'companyname', {"business": "WHEN IN ROME"})|raw}}</h1>
-                </div>
-                <aside class="aside">
-                    {{widget('content', 'about-content', {content: '<p>Cras ut hendrerit nunc. Etiam ut viverra lacus. Donec sagittis, nibh ut dapibus convallis, turpis leo scelerisque lectus, nec bibendum libero sem id urna. Cras ut hendrerit nunc. Etiam ut viverra lacus. Donec sagittis, nibh ut dapibus convallis, turpis leo scelerisque lectus, nec bibendum libero sem id urna. Cras ut hendrerit nunc. Etiam ut viverra lacus.</p>', lines: 'all'})|raw}}
-                    <div class="social">
-                        {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-                    </div>
-                    <nav class="nav">
-                        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-                    </nav>
-                </aside>
+        <div class="logo-title">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/star.png')})|raw}}
+            <h1>{{widget('companyname', 'companyname', {"business": "WHEN IN ROME"})|raw}}</h1>
+        </div>
+        <aside class="aside">
+            {{widget('content', 'about-content', {content: '<p>Cras ut hendrerit nunc. Etiam ut viverra lacus. Donec sagittis, nibh ut dapibus convallis, turpis leo scelerisque lectus, nec bibendum libero sem id urna. Cras ut hendrerit nunc. Etiam ut viverra lacus. Donec sagittis, nibh ut dapibus convallis, turpis leo scelerisque lectus, nec bibendum libero sem id urna. Cras ut hendrerit nunc. Etiam ut viverra lacus.</p>', lines: 'all'})|raw}}
+            <div class="social">
+                {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+            </div>
+            <nav class="nav">
+                {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            </nav>
+        </aside>
+</header>
 
-  </header>
-
-                <div class="wrapper bloglist-page">
-                    {{widget('bloglistposts', 'bloglistposts1', {})|raw}}
-                </div>
+<div class="wrapper bloglist-page">
+    {{zone('main')|raw}}
+</div>
         
-            <footer class="wrapper clearfix">
-                <h4>{{widget('content', 'footer', {content: 'Copyright. 2014', lines: 'all'})|raw}}</h4>
-            </footer>
-  
-  </div>
-
+<footer class="wrapper clearfix">
+    <h4>{{widget('content', 'footer', {content: 'Copyright. 2014', lines: 'all'})|raw}}</h4>
+</footer>
 
 {% endblock %}
