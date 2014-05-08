@@ -26,7 +26,7 @@
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#000000",
+            "color2":"#841c2f",
             "color3":"#336366",
             "color4":"#000000",
             "color5":"#8c8c8c",
@@ -35,7 +35,7 @@
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#000000",
+            "color2":"#4F7391",
             "color3":"#336366",
             "color4":"#000000",
             "color5":"#8c8c8c",
@@ -44,7 +44,7 @@
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#000000",
+            "color2":"#73AD5C",
             "color3":"#336366",
             "color4":"#000000",
             "color5":"#8c8c8c",
@@ -53,7 +53,7 @@
         },
         "Swatch 5": {
             "color1":"#ffffff",
-            "color2":"#000000",
+            "color2":"#4BA5A1",
             "color3":"#336366",
             "color4":"#000000",
             "color5":"#8c8c8c",
@@ -108,8 +108,8 @@
             "font-size": "18px",
             "font-weight": "200",
             "line-height": "28px",
-            "color": "@color-swatch2",
-            "color-hover": "@color-swatch3",
+            "color": "@color-swatch4",
+            "color-hover": "lighten(@color-swatch4,20%)",
             "letter-spacing": "inherit",
             "background-color": "transparent",
             "background-color-hover": "transparent"
@@ -126,10 +126,10 @@
         },
         "font8": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "22px",
+            "font-size": "36px",
             "font-weight": "600",
-            "line-height": "28px",
-            "color": "@color-swatch4",
+            "line-height": "42px",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font9": {
@@ -137,7 +137,7 @@
             "font-size": "18px",
             "font-weight": "300",
             "line-height": "28px",
-            "color": "@color-swatch5",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font10": {
