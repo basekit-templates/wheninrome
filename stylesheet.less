@@ -186,6 +186,7 @@ nav {
 	position: relative;
 	max-width: 700px;
 	min-height: 40px;
+	text-align: center;
 }
 
 .widget .extendednavigation ul li a, .widget .extendednavigation li > .text {
@@ -1445,7 +1446,7 @@ select::-ms-expand {
    7. RESPONSIVE
    =============================== */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.left, .right {
 		text-align: left;
 		float: none;
@@ -1465,6 +1466,7 @@ select::-ms-expand {
 	}
 	.widget .extendednavigation ul {
 		display: none;
+		padding-top:60px;
 		li {
 			padding: 0;
 			border-bottom:0px;
@@ -1509,6 +1511,14 @@ select::-ms-expand {
 		left: auto;
 	}	
 
+	.widget .extendednavigation ul.align-left li {
+		text-align:center;
+	}
+
+	ul.align-left li, button.justifyleft, .widget-align-left {
+		text-align:center;
+	}
+
 	.widget .extendednavigation a.pull {
 		width: 20px;
 		height: 40px;
@@ -1522,7 +1532,7 @@ select::-ms-expand {
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 
 	.widget .extendednavigation a.pull {
 		top:9px;
