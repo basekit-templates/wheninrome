@@ -115,8 +115,6 @@ footer {
 }
 .blog-post-item, .blogpost-page {
 	&.has-image {
-		.blog-post-content, .blog-post-body, .blog-post-summary, h2 {
-		}
 		.blog-post-publish-date, .blog-post-published-date {
 		}
 	}
@@ -204,6 +202,11 @@ nav {
 .widget.extendednavigation ul {
   display: table;
   margin: 0 auto;
+  float: none;
+  text-align: center;
+  li.folder ul {
+    text-align: left;
+  }
 }
 
 /* ===============================
@@ -371,7 +374,6 @@ button.btn:hover {
   &.signupform fieldset {
     button {
       height: 45px;
-      top: -2px;
       position: relative;
     }
     input {
@@ -399,10 +401,10 @@ button.btn:hover {
 }
 
 .blog-search-input {
-  width: 45%;
+  width: 35%;
   @media @mobile {
     text-indent: 12px;
-    width: 70%;
+    width: 65%;
   }
 }
 
@@ -1537,11 +1539,16 @@ select::-ms-expand {
 	}
 	.widget .extendednavigation ul {
 		display: none;
-		padding-top:60px;
 		li {
-			padding: 0;
-			border-bottom:0px;
-			margin-left:0px;
+			margin-left: 0;
+      border-bottom: 1px solid fade(@color-swatch5, 15%);
+      padding: 6px 0 4px;
+      &:first-child {
+        padding-top: 25px;
+      }
+      &:last-child {
+        margin-bottom: 25px;
+      }
 			&:hover ul {
 				margin: 0;
 			}
@@ -1549,10 +1556,16 @@ select::-ms-expand {
 				margin:0px auto;
 				display:table;
 			}
+      &.folder li {
+        border: none;
+        &:first-child {
+          padding-top: 16px;
+        }
+        &:last-child {
+          margin-bottom: 8px;
+        }
+      }
 		}
-	}
-	.blog-post-content, .blog-post-item.has-image .blog-post-summary, .blog-post-item.has-image h2, .blog-post-item.has-image .blog-post-content, .blog-post-item.has-image {
-		padding-right: 0;
 	}
 	.blog-post-item.has-image .blog-post-publish-date {
 		text-shadow: none;
@@ -1595,9 +1608,6 @@ select::-ms-expand {
 	}
 	.blog-post-item, .blogpost-page {
 		&.has-image {
-			.blog-post-content, .blog-post-summary h2 {
-				padding-right: 0;
-			}
 			.blog-post-publish-date, .blog-post-published-date {
 				text-shadow: none;
 				color: @color-swatch4;
