@@ -129,7 +129,7 @@
             "font-size": "36px",
             "font-weight": "600",
             "line-height": "42px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font9": {
@@ -137,7 +137,7 @@
             "font-size": "18px",
             "font-weight": "300",
             "line-height": "28px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font10": {
