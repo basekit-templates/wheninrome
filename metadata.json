@@ -5,7 +5,7 @@
         "pageTypes": [
         "home",
         "default",
-        "bloglistposts",
+        "blogpostlist",
         "blogpost"
     ],
     "tags": {
