@@ -2,6 +2,7 @@
     "name":"wheninrome",
     "thumbnail":"wheninrome.png",
     "screenshot":"wheninrome.png",
+    "templateType":"blog",
         "pageTypes": [
         "home",
         "default",
