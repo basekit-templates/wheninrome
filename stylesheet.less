@@ -355,39 +355,29 @@ button.btn:hover {
 	background-color:lighten(@color-swatch2,15%);
 }
 
-.widget.profile form button {
-	padding: 5px 14px 8px;
-}
-
 .signupform fieldset input {
 	background-color:darken(@color-swatch1,5%);
 	border: 0;
 	text-indent: 12px;
 }
 
-.signupform fieldset button {
-	padding: 9px 20px 11px;
-	margin: 0;
-	border: 0;
-	text-decoration: none;
-	margin-bottom: 20px;
-}
-
 .widget {
-  &.signupform fieldset {
-    button {
-      height: 45px;
-      position: relative;
-    }
+  &.profile {
+      form {
+          fieldset input {
+              border: 1px solid fade(@color-swatch5, 25%);
+              height: 46px;
+              vertical-align: top;
+              @media @mobile {
+                  width: 75%;
+              }
+          }
+      }
+  }
+  &.signupform {
     input {
-      border: 1px solid fade(@color-swatch5, 25%);
-      width: 50%;
-      @media @tablet {
-          width: 65%;
-      }
-      @media @mobile {
-          width: 70%;
-      }
+      height: 46px;
+      vertical-align: top;
     }
   }
 }
