@@ -364,20 +364,24 @@ button.btn:hover {
 .widget {
   &.profile {
       form {
-          fieldset input {
-              border: 1px solid fade(@color-swatch5, 25%);
-              height: 46px;
-              vertical-align: top;
-              @media @mobile {
-                  width: 75%;
-              }
-          }
-      }
+        fieldset input {
+            border: 1px solid fade(@color-swatch5, 25%);
+            vertical-align: top;
+            @media @mobile {
+                width: 75%;
+            }
+        }
+        button {
+          padding: 7px 15px;
+        }
+    }
   }
   &.signupform {
     input {
-      height: 46px;
       vertical-align: top;
+    }
+    button {
+      padding: 10px 20px;
     }
   }
 }
