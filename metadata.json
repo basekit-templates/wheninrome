@@ -3,12 +3,7 @@
     "thumbnail":"wheninrome.png",
     "screenshot":"wheninrome.png",
     "templateType":"blog",
-        "pageTypes": [
-        "home",
-        "default",
-        "blogpostlist",
-        "blogpost"
-    ],
+        
     "tags": {
     "en": ["clean", "nature", "white", "modern", "blog", "professional", "simple", "arctic", "winter", "snow", "sans serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
