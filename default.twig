@@ -6,8 +6,8 @@
 <header>
     <div class="wrapper clearfix">
         <div class="logo-title">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/star.png')})|raw}}
-            <h1>{{widget('companyname', 'companyname', {"business": "WHEN IN ROME"})|raw}}</h1>
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            <h1>{{widget('companyname', 'companyname', {"business": "profile"})|raw}}</h1>
         </div>
         <aside class="aside">
             {{widget('content', 'about-content', {content: '<p>Cras ut hendrerit nunc. Etiam ut viverra lacus. Donec sagittis, nibh ut dapibus convallis, turpis leo scelerisque lectus, nec bibendum libero sem id urna. Cras ut hendrerit nunc. Etiam ut viverra lacus. Donec sagittis, nibh ut dapibus convallis, turpis leo scelerisque lectus, nec bibendum libero sem id urna. Cras ut hendrerit nunc. Etiam ut viverra lacus.</p>', lines: 'all'})|raw}}
@@ -15,7 +15,7 @@
                 {{widget('profile', 'footercolumn1socialicons', { 'profileType' : 'socialicons' })|raw}}
             </div>
             <nav class="nav">
-                {{widget('extendednavigation', 'navigationheader', {})|raw}}
+                 {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
             </nav>
         </aside>
 </header>
@@ -25,7 +25,7 @@
 </div>
         
 <footer class="wrapper clearfix">
-    <h4>{{widget('content', 'footer', {content: 'Copyright. 2014', lines: 'all'})|raw}}</h4>
+    <h4>{{widget('content', 'footer', {content: 'Lorem Ipsum', lines: 'all'})|raw}}</h4>
 </footer>
 
 {% endblock %}
