@@ -1,4 +1,4 @@
 When In Rome
-======
+============
 
-Basekit Blog Template
+Basekit Blog Theme
