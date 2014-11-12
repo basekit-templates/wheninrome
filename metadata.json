@@ -117,7 +117,7 @@
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch2",
-            "background-color-hover": "lighten(@color-swatch2,15%)"
+            "background-color-hover": "lighten(@color-swatch2,20%)"
         },
         "font8": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
