@@ -218,10 +218,25 @@ nav {
 
 .widget .extendednavigation ul li a, .widget .extendednavigation li > .text {
 	padding: 5px 20px;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .widget .extendednavigation ul li:hover ul {
 	background-color: darken(@color-swatch1,5%);
+}
+
+/* Selected state */
+
+.extendednavigation ul li.folder.selected ul li .text {
+    text-decoration: underline;
+}
+
+.extendednavigation ul li.selected, .extendednavigation ul li:hover ul li.selected, .extendednavigation ul li.folder.selected ul li.selected, .extendednavigation ul li.folder.selected {
+    a, .text {
+        text-decoration: underline;
+    }
 }
 
 /* ===============================
