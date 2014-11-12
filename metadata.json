@@ -123,7 +123,7 @@
             "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "36px",
             "font-weight": "600",
-            "line-height": "42px",
+            "line-height": "48px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -131,7 +131,7 @@
             "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "300",
-            "line-height": "28px",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
