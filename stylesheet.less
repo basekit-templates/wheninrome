@@ -39,6 +39,10 @@ body {
 	padding-bottom:20px;
 }
 
+.widget {
+  clear: both;
+}
+
 .article.home-page {
 	padding: 0px;
 	width: 100%;
@@ -97,6 +101,7 @@ footer {
 	display: inline;
 	a {
 		font-size: inherit;
+    text-shadow: none;
 	}
 }
 .blog-post-tags {
@@ -107,13 +112,6 @@ footer {
 		display: inline;
 		li {
 			margin-left: 0;
-			&:after {
-				color: @color-swatch4;
-				content: ",";
-			}
-			&:nth-last-of-type:after {
-				display: none;
-			}
 		}
 	}
 }
@@ -151,6 +149,14 @@ footer {
 .article {
 	position: relative;
 	overflow: hidden;
+}
+
+aside.blog-post-sharing {
+  display: inline-block;
+  margin: 0.5em 0 1em;
+  .btn.facebook, .btn.twitter {
+    margin-right: 10px;
+  }
 }
 
 /* ===============================
@@ -223,6 +229,29 @@ nav {
 
 .twitter ul li a {
 	font-weight:400;
+}
+
+ul.twitter {
+    .twitter-profile-pic {
+        margin-right: 10px;
+        margin-top: 4px;
+        a img {
+            width: 48px;
+        }
+    }
+    .twitter-content {
+        padding-left: 68px;
+        p {
+            padding-bottom: 0;
+        }
+        time {
+            font-size: @font-swatch5-font-size;
+        }
+    }
+}
+
+.widget.profile ul.twitter .twitter-content {
+  padding-left: 0;
 }
 
 .widget.feature h2 {
@@ -347,6 +376,10 @@ button.btn:hover {
 	background-color:lighten(@color-swatch2,15%);
 }
 
+.widget.clicktocall a {
+  font-weight: 700;
+}
+
 .signupform fieldset input {
 	background-color:darken(@color-swatch1,5%);
 	border: 0;
@@ -371,15 +404,30 @@ button.btn:hover {
   &.signupform {
     input {
       vertical-align: top;
+      height: 45px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+        @media @tablet {
+          width: 75%;
+          margin-bottom: 10px;
+        }
+        @media @mobile {
+          text-indent: 12px;
+          width: 100%;
+        }
     }
     button {
       padding: 10px 20px;
+      height: 45px;
+      vertical-align: top;
     }
   }
 }
 
 .blog-search-submit-button {
-	padding:7px 20px 11px;
+	padding:10px 20px;
+  height: 45px;
 	margin: 0;
 	border: 0;
 	text-decoration: none;
@@ -387,13 +435,26 @@ button.btn:hover {
 	background-color:@color-swatch2;
 	color:@font-swatch7-color;
 	font-size:@font-swatch7-font-size;
+  cursor: pointer;
+  vertical-align: top;
+  &:hover {
+    background-color: @font-swatch7-background-color-hover;
+  }
 }
 
 .blog-search-input {
   width: 35%;
+  height: 45px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  @media @tablet {
+    width: 75%;
+    margin-bottom: 10px;
+  }
   @media @mobile {
     text-indent: 12px;
-    width: 65%;
+    width: 100%;
   }
 }
 
@@ -1606,6 +1667,8 @@ select {
 	.blog-post-item.has-image .blog-post-publish-date {
 		text-shadow: none;
 		color: @color-swatch4;
+    display: inline-block;
+    margin-bottom: 2em;
 	}
 
 	.widget.extendednavigation .bk-overlay {
