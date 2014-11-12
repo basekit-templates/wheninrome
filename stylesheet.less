@@ -577,6 +577,71 @@ input, textarea {
 }
 
 /* ===============================
+   MENU SECTIONS
+   =============================== */
+
+.widget {
+    &.menusections {
+        margin: 0 0 1em;
+        @media @tablet {
+            border: none;
+            margin: 2em 0 1em;
+        }
+        ul {
+            text-align: center;
+            margin: 0;
+            display: block;
+            @media @tablet {
+                width: 100%;
+                border-top: 2px solid fade(@color-swatch5, 20%);
+                border-bottom: 2px solid fade(@color-swatch5, 20%);
+                padding: 0.25em 0;
+                margin: 1.5em auto;
+            }
+            li {
+                margin: 0 0.5em;
+                &:first-child {
+                    margin-left: 0;
+                    @media @mobile {
+                        margin: 0;
+                    }
+                    a {
+                        @media only screen and (max-width: 1024px) {
+                            padding-left: 0;
+                        }
+                    }
+                }
+                a {
+                    font-family:@font-swatch6-font-family;
+                    font-size:@font-swatch6-font-size;
+                    font-weight: @font-swatch6-font-weight;
+                    color: @font-swatch6-color;
+                    line-height:@font-swatch6-line-height;
+                    letter-spacing: @font-swatch6-letter-spacing;
+                    &:hover {
+                        color: @color-swatch5;
+                        text-decoration: none;
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    border-bottom: 1px solid fade(@color-swatch5, 20%);
+                    margin: 0;
+                    width: 100%;
+                    padding: 1em 0;
+                }
+                &:last-child {
+                    border-bottom: 0;
+                    a:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }  /* end menu sections */
+}
+
+
+/* ===============================
    6. MENU
    =============================== */
 
