@@ -385,7 +385,10 @@ button.btn:hover {
 }
 
 .widget.clicktocall a {
-  font-weight: 700;
+  @media @mobile {
+    font-weight: 700;
+    padding: 15px 10px 15px 38px;
+  }
 }
 
 .signupform fieldset input {
@@ -415,6 +418,10 @@ button.btn:hover {
           padding: 7px 15px;
           vertical-align: top;
           height: 45px;
+          margin-left: -4px;
+          @media @mobile {
+            margin-left: 0;
+          }
         }
     }
   }
@@ -439,6 +446,10 @@ button.btn:hover {
       padding: 10px 20px;
       height: 45px;
       vertical-align: top;
+      margin-left: -4px;
+      @media @mobile {
+        margin-left: 0;
+      }
     }
   }
 }
